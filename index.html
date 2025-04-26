@@ -8,17 +8,19 @@
 </head>
 <body>
   <header>
-    <button id="menu-toggle" class="menu-toggle">☰</button> <!-- Hamburger -->
-
-    <nav>
-      <h1 class="logo">Ano Chisamba</h1>
+    <div class="logo">My Logo</div>
+  
+    <button id="menu-toggle" class="menu-toggle">☰</button>
+  
+    <nav id="nav-menu">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#projects">Portfolio</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
+  
 
   <section class="hero">
     <div class="hero-text">
@@ -70,19 +72,20 @@
 
   <script>
     const menuToggle = document.getElementById('menu-toggle');
-    const nav = document.querySelector('nav');
-    const navLinks = document.querySelectorAll('nav ul li a');
+    const navMenu = document.getElementById('nav-menu');
+    const navLinks = document.querySelectorAll('#nav-menu ul li a');
   
     menuToggle.addEventListener('click', () => {
-      nav.classList.toggle('active');
+      navMenu.classList.toggle('active');
     });
   
     navLinks.forEach(link => {
       link.addEventListener('click', () => {
-        nav.classList.remove('active');
+        navMenu.classList.remove('active');
       });
     });
   </script>
+  
 
 </body>
 </html>

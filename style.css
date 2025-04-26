@@ -186,15 +186,17 @@ footer {
   }
 
   .menu-toggle {
-    display: block; /* Make it visible */
     font-size: 2rem;
+    background: none;
+    border: none;
     cursor: pointer;
     color: #cc678d;
-    position: absolute; /* Absolute positioning */
-    top: 20px; /* Adjust for top positioning */
-    right: 20px; /* Right side of the screen */
+    z-index: 1001;
   }
   
+  #nav-menu ul li {
+    margin: 1rem 0;
+  }
 
   nav ul li a {
     font-size: 1.2rem;
@@ -240,6 +242,22 @@ footer {
     display: flex;
   }
   
+  #nav-menu.active {
+    display: flex;
+  }
+
+  #nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    padding: 1rem 0;
+    position: absolute;
+    top: 70px; /* Adjust depending on your header height */
+    right: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
 
 }
 
