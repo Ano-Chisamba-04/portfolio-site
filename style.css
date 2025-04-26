@@ -185,6 +185,17 @@ footer {
     gap: 0.5rem;
   }
 
+  .menu-toggle {
+    display: block; /* Make it visible */
+    font-size: 2rem;
+    cursor: pointer;
+    color: #cc678d;
+    position: absolute; /* Absolute positioning */
+    top: 20px; /* Adjust for top positioning */
+    right: 20px; /* Right side of the screen */
+  }
+  
+
   nav ul li a {
     font-size: 1.2rem;
     padding: 0.5rem;
@@ -207,13 +218,6 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-
-  .menu-toggle {
-    display: none; /* Hide it on big screens */
-    font-size: 2rem;
-    cursor: pointer;
-    color: #cc678d;
-  }
   
   .menu-toggle {
     display: block; /* Show on small screens */
@@ -225,7 +229,7 @@ footer {
     background-color: #fff;
     padding: 1rem;
     position: absolute;
-    top: 70px;
+    top: 70px;  /* Adjust if needed */
     right: 20px;
     width: 200px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -235,6 +239,7 @@ footer {
   nav.active {
     display: flex; /* Show nav when active */
   }
+  
   
 
 }
