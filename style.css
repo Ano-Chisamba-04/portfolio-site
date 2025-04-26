@@ -203,6 +203,13 @@ nav ul li a:hover,
     gap: 2rem;
   }
 
+  .hero-img img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain; /* NEW: so it doesn't zoom too much */
+    object-position: center top;
+  }
+
   .hero-text, .hero-img {
     max-width: 100%;
   }
