@@ -72,9 +72,17 @@
   <script>
     const menuToggle = document.getElementById('menu-toggle');
     const nav = document.querySelector('nav');
+    const navLinks = document.querySelectorAll('nav ul li a'); // Select all the links
   
     menuToggle.addEventListener('click', () => {
-      nav.classList.toggle('active');  // This will toggle the "active" class on the nav
+      nav.classList.toggle('active');
+    });
+  
+    // Close the menu when a link is clicked
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('active');
+      });
     });
   </script>
   
