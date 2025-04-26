@@ -67,11 +67,11 @@ nav ul li a {
 /* Hero Section */
 .hero {
   display: flex;
+  flex-direction: row; /* Side by side layout */
   justify-content: space-between;
   align-items: center;
   padding: 4rem 2rem;
-  position: relative;
-  gap: 2rem;
+  color: white;
 }
 
 .hero::before {
@@ -86,7 +86,10 @@ nav ul li a {
 
 .hero-text {
   flex: 1;
-  max-width: 600px;
+  padding-right: 2rem; /* Space between text and image */
+  max-width: 600px; /* Limit the width of the text to avoid long lines */
+  line-height: 1.8; /* Add line-height to make the text easier to read */
+  word-wrap: break-word; /* Ensure the text wraps properly */
 }
 
 .hero-text h2 {
@@ -107,12 +110,11 @@ nav ul li a {
 }
 
 .hero-img img {
-  width: 320px;
-  height: 320px;
+  width: 250px; /* Control the size */
+  height: 250px;
   border-radius: 50%;
   object-fit: cover;
   object-position: 50% 20%;
-  border: 4px solid #ccc;
 }
 
 /* Projects Section */
@@ -198,16 +200,18 @@ nav ul li a:hover,
 /* Responsive Styles */
 @media (max-width: 768px) {
   .hero {
-    flex-direction: column;
+    flex-direction: column; /* Stacks text and image on top of each other */
     text-align: center;
-    gap: 2rem;
+  }
+
+  .hero-text {
+    max-width: 90%; /* On mobile, reduce the width of the text a bit */
+    padding-right: 0;
   }
 
   .hero-img img {
-    width: 250px;
-    height: 250px;
-    object-fit: contain; /* NEW: so it doesn't zoom too much */
-    object-position: center top;
+    width: 150px; /* Adjust size for mobile */
+    height: 150px;
   }
 
   .hero-text, .hero-img {
