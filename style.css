@@ -207,20 +207,23 @@ footer {
 
   /* Hero Section (For Mobile Layout) */
   .hero {
-    flex-direction: row; /* Change from column to row */
+    display: flex;
+    flex-direction: row; /* Align text and image horizontally */
     justify-content: space-between; /* Ensure space between text and image */
+    align-items: center; /* Vertically center the items */
     text-align: left; /* Align text to the left */
+    padding: 2rem 2rem; /* Add some padding for spacing */
   }
 
   .hero-text {
-    max-width: 50%; /* Limit text width */
-    margin-right: 2rem; /* Add some space between text and image */
+    max-width: 50%; /* Limit text width to 50% */
+    margin-right: 2rem; /* Space between text and image */
   }
 
   .hero-img {
-    max-width: 50%; /* Limit image width */
+    max-width: 50%; /* Limit image width to 50% */
     display: flex;
-    justify-content: center; /* Center the image */
+    justify-content: center; /* Center image */
   }
 
   .hero-img img {
@@ -281,6 +284,7 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 }
+
 
 
   /* Menu visibility */
