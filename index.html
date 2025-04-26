@@ -8,9 +8,8 @@
 </head>
 <body>
   <header>
-    <div class="menu-toggle" id="menu-toggle">
-      ☰
-    </div>    
+    <button id="menu-toggle" class="menu-toggle">☰</button> <!-- Hamburger -->
+
     <nav>
       <h1 class="logo">Ano Chisamba</h1>
       <ul>
@@ -72,21 +71,18 @@
   <script>
     const menuToggle = document.getElementById('menu-toggle');
     const nav = document.querySelector('nav');
-    const navLinks = document.querySelectorAll('nav ul li a'); // Select all the links
+    const navLinks = document.querySelectorAll('nav ul li a');
   
     menuToggle.addEventListener('click', () => {
       nav.classList.toggle('active');
     });
   
-    // Close the menu when a link is clicked
     navLinks.forEach(link => {
       link.addEventListener('click', () => {
         nav.classList.remove('active');
       });
     });
   </script>
-  
-  
 
 </body>
 </html>
