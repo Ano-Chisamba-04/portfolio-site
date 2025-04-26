@@ -179,7 +179,7 @@ footer {
   color: #555;
 }
 
-/* Responsive Styles */
+/* Mobile Menu and Responsive Styles */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
@@ -195,7 +195,7 @@ footer {
     color: #cc678d;
     z-index: 1001;
   }
-  
+
   #nav-menu ul li {
     margin: 1rem 0;
   }
@@ -203,110 +203,22 @@ footer {
   nav ul li a {
     font-size: 1.2rem;
     padding: 0.5rem;
-  }  
+  }
 
-  /* Hero Section (For Mobile Layout) */
   .hero {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-    padding: 2rem;
+    flex-direction: column;
+    text-align: center;
   }
-  
-  .hero-text {
-    max-width: 45%;
-    margin-right: 1.5rem;
-    font-size: 0.95rem; /* slightly smaller text */
-    line-height: 1.6; /* better spacing between lines */
-    padding: 0 0.5rem; /* add inner padding */
-  }
-  
-  .hero-text h2 {
-    font-size: 1.8rem; /* slightly smaller heading */
-    margin-bottom: 1rem;
-  }
-  
-  .hero-text p {
-    max-width: 100%; /* keep paragraph within text block */
-    word-break: break-word; /* prevent overflow */
-  }
-  
+
+  .hero-text,
   .hero-img {
-    max-width: 45%;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .hero-img img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
-
-  .hero-img img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-
-  .hero-text h2 {
-    font-size: 2rem;
-  }
-
-  .hero-text p {
-    font-size: 1rem;
+    max-width: 100%;
   }
 
   .project-list {
     flex-direction: column;
     align-items: center;
   }
-
-  .menu-toggle {
-    display: block; /* Show on small screens */
-  }
-  
-  nav {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-    width: 100%;
-    padding: 1rem 0;
-    position: relative;
-    top: 0;
-    right: 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  nav.active {
-    display: flex;
-  }
-  
-  #nav-menu.active {
-    display: flex;
-  }
-
-  #nav-menu {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-    width: 100%;
-    padding: 1rem 0;
-    position: absolute;
-    top: 70px; /* Adjust depending on your header height */
-    right: 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-}
-
-
 
   /* Menu visibility */
   nav {
@@ -334,3 +246,4 @@ footer {
   .hero-text, .hero-img {
     padding: 1rem; /* Add some space around these items */
   }
+}
