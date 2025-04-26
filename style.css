@@ -185,6 +185,11 @@ footer {
     gap: 0.5rem;
   }
 
+  nav ul li a {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }  
+
   .hero {
     flex-direction: column;
     text-align: center;
@@ -194,11 +199,53 @@ footer {
     max-width: 100%;
   }
 
+  .hero-text {
+    text-align: center;
+  }  
+
   .project-list {
     flex-direction: column;
     align-items: center;
   }
+
+  .menu-toggle {
+    display: none; /* Hide it on big screens */
+    font-size: 2rem;
+    cursor: pointer;
+    color: #cc678d;
+  }
+  
+  .menu-toggle {
+    display: block; /* Show on small screens */
+  }
+  
+  nav {
+    display: none; /* Hide the nav by default on mobile */
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1rem;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+  }
+  
+  nav.active {
+    display: flex; /* Show nav when active */
+  }
+  
+
 }
 
+/* Link hover effects */
+nav ul li a:hover,
+.contact-info a:hover {
+  color: #cc678d;
+  background-color: rgba(204, 103, 141, 0.1);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
 
 

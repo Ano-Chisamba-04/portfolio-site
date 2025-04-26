@@ -8,6 +8,9 @@
 </head>
 <body>
   <header>
+    <div class="menu-toggle" id="menu-toggle">
+      ☰
+    </div>    
     <nav>
       <h1 class="logo">Ano Chisamba</h1>
       <ul>
@@ -65,6 +68,17 @@
   <footer>
     <p>Made with 💕 by Ano Chisamba © 2025. All rights reserved.</p>
   </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.querySelector('nav');
+  
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+  
+
 </body>
 </html>
 
