@@ -124,6 +124,16 @@ nav ul li a {
   text-align: center;
 }
 
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+
 .projects h2 {
   margin-bottom: 2rem;
   color: #cc678d;
@@ -137,11 +147,13 @@ nav ul li a {
 }
 
 .project {
+  flex: 1 1 300px;
   background: #f9f9f9;
   padding: 1rem;
-  border-radius: 10px;
-  width: 300px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-radius: 12px;
+  max-width: 400px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
 }
 
 .project img {
